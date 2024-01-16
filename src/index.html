@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./images/logo.svg" />
+  <link rel="stylesheet" href="./index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Адвокат</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__logo"></div>
+      <div class="header__search">
+        <div class="header__search-icon"></div>
+        <form class="header__form" novalidate>
+          <input class="header__search-input" type="text" placeholder="Поиск" minlength="3" required>
+        </form>
+      </div>
+      <a class="header__notifications" href="#">
+        <div class="header__notifications"></div>
+      </a>
+    </header>
+    <main class="main">
+      <h1 class="main__title">Главная страница сайта Мой Адвокат</h1>
+      <section class="situations">
+        <h2 class="situations__title">Ситуации наших последних клиентов</h2>
+        <ul class="situations__container">
+          <li class="situations__card">
+            <h3 class="situations__card-title">Развод</h3>
+            <p class="situations__card-subtitle">с нами это легко</p>
+          </li>
+          <li class="situations__card">
+            <h3 class="situations__card-title">Банкротство</h3>
+            <p class="situations__card-subtitle">с нами это легко</p>
+          </li>
+          <li class="situations__card">
+            <h3 class="situations__card-title">Развод</h3>
+            <p class="situations__card-subtitle">с нами это легко</p>
+          </li>
+        </ul>
+      </section>
+      <section class="consultation">
+        <div class="consultation__logo"></div>
+        <h2 class="consultation__title">Мы всегда на связи и готовы помочь вам</h2>
+        <p class="consultation__subtitle">Готовы проконсультировать вас</p>
+        <a class="consultation__button" href="#">Мне нужна консультация</a>
+      </section>
+      <section class="services">
+        <h2 class="services__title">Наши услуги</h2>
+        <div class="services__container">
+          <a class="services__item" href="#">
+            <div class="services__item-logo"></div>
+            <h2 class="services__item-title">Ситуации</h2>
+            <p class="services__item-subtitle">в судебной практике</p>
+          </a>
+          <a class="services__item" href="#">
+            <div class="services__item-logo"></div>
+            <h2 class="services__item-title">Ситуации</h2>
+          </a>
+          <a class="services__item" href="#">
+            <div class="services__item-logo"></div>
+            <h2 class="services__item-title">Ситуации</h2>
+          </a>
+          <a class="services__item" href="#">
+            <div class="services__item-logo"></div>
+            <h2 class="services__item-title">Ситуации</h2>
+            <p class="services__item-subtitle">в судебной практике</p>
+          </a>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__header">
+          <h2 class="news-title">Новости</h2>
+          <a class="news" href="#">Читать все</a>
+        </div>
+        <ul class="news__container">
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <div class="news__icon news__icon-1"></div>
+              <article class="news__article">
+                <h3 class="news__article-title">Кредитные организации</h3>
+                <p class="news__article-subtitle">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные
+                  комиссии...</p>
+                <p class="news__article-date">25 апреля</p>
+              </article>
+            </a>
+          </li>
+          <li class="news__item">
+            <div class="news__icon news__icon-2"></div>
+            <article class="news__article">
+              <h3 class="news__article-title">Кредитные организации</h3>
+              <p class="news__article-subtitle">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные
+                комиссии...</p>
+              <p class="news__article-date">25 апреля</p>
+            </article>
+          </li>
+          <li class="news__item">
+            <div class="news__icon"></div>
+            <article class="news__article">
+              <h3 class="news__article-title">Кредитные организации</h3>
+              <p class="news__article-subtitle">Банкам нельзя с 1 июля требовать от компаний, ИП и физлиц повышенные
+                комиссии...</p>
+              <p class="news__article-date">25 апреля</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <div class="footer__link-icon footer__link-icon_main"></div>
+              <h2 class="footer__link-title">Главная</h2>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <div class="footer__link-icon footer__link-icon_services"></div>
+              <h2 class="footer__link-title">Сервисы</h2>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <div class="footer__link-icon footer__link-icon_communications"></div>
+              <h2 class="footer__link-title">Обращения</h2>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <div class="footer__link-icon footer__link-icon_call"></div>
+              <h2 class="footer__link-title">Звонок</h2>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <div class="footer__link-icon footer__link-icon_profile"></div>
+              <h2 class="footer__link-title">Профиль</h2>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -39,8 +39,7 @@
   &__search-input {
     margin-right: 12px;
     border: none;
-    @include font-text(14px, 24px);
-    letter-spacing: 0.1px;
+    @include font-text(14px, 24px, 0.1px);
     width: 100%;
   }
 

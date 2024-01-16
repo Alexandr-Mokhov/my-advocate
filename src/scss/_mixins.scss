@@ -1,8 +1,9 @@
 @import "./vars";
 
-@mixin font-text($fz, $lh, $fw: 500) {
+@mixin font-text($fz, $lh, $ls, $fw: 500) {
 	font-size: $fz;
   line-height: $lh;
+  letter-spacing: $ls;
 	font-weight: $fw;
 }
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="./images/logo.svg" />
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./src/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мой Адвокат</title>
 </head>
@@ -14,14 +14,12 @@
     <header class="header">
       <div class="header__logo"></div>
       <div class="header__search">
-        <div class="header__search-icon"></div>
         <form class="header__form" novalidate>
+          <button class="header__search-icon" type="submit"></button>
           <input class="header__search-input" type="text" placeholder="Поиск" minlength="3" required>
         </form>
       </div>
-      <a class="header__notifications" href="#">
-        <div class="header__notifications"></div>
-      </a>
+      <a class="header__notifications" href="#"></a>
     </header>
     <main class="main">
       <h1 class="main__title">Главная страница сайта Мой Адвокат</h1>

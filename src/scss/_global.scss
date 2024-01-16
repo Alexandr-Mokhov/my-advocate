@@ -1,0 +1,33 @@
+@import "./vars";
+
+.page {
+  font-family: 'Stem';
+  color: $text-black;
+  background-color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  min-width: 250px;
+  width: 328px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: $text-black;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+
+

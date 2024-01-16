@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Stem';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./Stem-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Stem';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./Stem-Medium.woff") format("woff");
+}

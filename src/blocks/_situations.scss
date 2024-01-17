@@ -24,6 +24,22 @@
     box-sizing: border-box;
     background: linear-gradient(127.57deg, rgba(43, 58, 76, 0.83) 12.5%, rgba(4, 182, 245, 0.63) 106.03%);
     position: relative;
+
+    &:nth-child(1) {
+      animation: horizontally-1 16s ease infinite;
+    }
+
+    &:nth-child(2) {
+      animation: horizontally-2 16s ease infinite;
+    }
+
+    &:nth-child(3) {
+      animation: horizontally-3 16s ease infinite;
+    }
+
+    &:nth-child(4) {
+      animation: horizontally-4 16s ease infinite;
+    }
   }
 
   &__card-background {
@@ -57,5 +73,151 @@
 
   @media screen and (max-width: 315px) {
     width: calc(100vw - 47px);
+  }
+}
+
+@keyframes horizontally-1 {
+
+  0%,
+  20% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  25%,
+  45% {
+    transform: translateX(-115%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  45%,
+  50% {
+    transform: translateX(330%);
+    visibility: visible;
+  }
+
+  50%,
+  70% {
+    transform: translateX(220%);
+    opacity: 1;
+  }
+
+  75%,
+  95% {
+    transform: translateX(110%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes horizontally-2 {
+
+  0%,
+  20% {
+    transform: translateX(0%);
+  }
+
+  25%,
+  45% {
+    transform: translateX(-110%);
+    opacity: 1;
+  }
+
+  50%,
+  70% {
+    transform: translateX(-220%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  70%,
+  75% {
+    transform: translateX(220%);
+    visibility: visible;
+  }
+
+  75%,
+  95% {
+    transform: translateX(110%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes horizontally-3 {
+
+  0%,
+  20% {
+    transform: translateX(0%);
+  }
+
+  25%,
+  45% {
+    transform: translateX(-110%);
+  }
+
+  50%,
+  70% {
+    transform: translateX(-220%);
+    opacity: 1;
+  }
+
+  75%,
+  95% {
+    transform: translateX(-330%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  95%,
+  100% {
+    transform: translateX(110%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes horizontally-4 {
+
+  0%,
+  20% {
+    transform: translateX(0%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  25%,
+  45% {
+    transform: translateX(-110%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  50%,
+  70% {
+    transform: translateX(-220%);
+    opacity: 1;
+  }
+
+  75%,
+  95% {
+    transform: translateX(-330%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateX(-440%);
+    opacity: 0;
+    visibility: hidden;
   }
 }

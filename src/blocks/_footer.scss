@@ -1,0 +1,77 @@
+@import "../scss/vars";
+
+.footer {
+  width: 328px;
+  height: 56px;
+  position: fixed;
+  bottom: 0;
+  background-color: $background-light;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &__item {
+    padding: 8px 0;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__link-icon {
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &_main {
+      background-image: url(./images/navigation-main.svg);
+    }
+
+    &_services {
+      background-image: url(./images/navigation-services.svg);
+    }
+
+    &_communications {
+      background-image: url(./images/navigation-communications.svg);
+    }
+
+    &_call {
+      background-image: url(./images/navigation-call.svg);
+    }
+
+    &_profile {
+      background-image: url(./images/navigation-profile.svg);
+    }
+  }
+
+  &__link-title {
+    @include font-text(12px, 16px, .4px, 350);
+    text-align: center;
+    margin: 0;
+
+    &_active {
+      color: $text-blue;
+    }
+  }
+
+  &__notifications {
+    background-color: $notifications-color;
+    border-radius: 7px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include font-text(10px, 12px, .2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-white;
+  }
+}

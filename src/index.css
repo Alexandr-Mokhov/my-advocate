@@ -156,6 +156,7 @@ ul {
   background: linear-gradient(rgba(4, 182, 245, 0.16), rgba(4, 182, 245, 0.08));
   border: 2px solid rgba(4, 182, 245, 0.1607843137);
   box-sizing: border-box;
+  margin-bottom: 32px;
 }
 .consultation__logo {
   width: 295px;
@@ -193,4 +194,50 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.services__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.services__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.services__item {
+  height: 110px;
+  padding: 12px;
+}
+.services__item-logo {
+  width: 38px;
+  height: 38px;
+}
+.services__item-logo_situations {
+  background-image: url(./images/services-situations.svg);
+}
+.services__item-logo_question {
+  background-image: url(./images/services-question.svg);
+}
+.services__item-logo_documents {
+  background-image: url(./images/services-documents.svg);
+}
+.services__item-logo_directory {
+  background-image: url(./images/services-directory.svg);
+}
+.services__item-title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+  margin: 8px 0 4px;
+}
+.services__item-subtitle {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  font-weight: 350;
 }/*# sourceMappingURL=index.css.map */

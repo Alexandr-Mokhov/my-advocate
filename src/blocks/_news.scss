@@ -41,15 +41,10 @@
     height: 90px;
     border-radius: 6px;
     margin-right: 6px;
-    background-position: center;
-
-    &_1 {
-      background-image: url(./images/news-logo-1.svg);
-    }
-
-    &_2 {
-      background-image: url(./images/news-logo-2.svg);
-    }
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__article {

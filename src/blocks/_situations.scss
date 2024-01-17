@@ -16,7 +16,6 @@
 
   &__card {
     min-width: 120px;
-    height: 80px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -46,7 +45,7 @@
 
   &__card-title {
     @include font-text(14px, 20px, 0.1px);
-    margin: 0;
+    margin: 38px 0 0;
     color: $text-white;
   }
 

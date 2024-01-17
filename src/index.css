@@ -113,7 +113,6 @@ ul {
 }
 .situations__card {
   min-width: 120px;
-  height: 80px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -142,7 +141,7 @@ ul {
   line-height: 20px;
   letter-spacing: 0.1px;
   font-weight: 500;
-  margin: 0;
+  margin: 38px 0 0;
   color: #FFF;
 }
 .situations__card-subtitle {
@@ -291,13 +290,10 @@ ul {
   height: 90px;
   border-radius: 6px;
   margin-right: 6px;
-  background-position: center;
-}
-.news__icon_1 {
-  background-image: url(./images/news-logo-1.svg);
-}
-.news__icon_2 {
-  background-image: url(./images/news-logo-2.svg);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .news__article {
   width: auto;
@@ -337,6 +333,9 @@ ul {
 }
 .footer__item {
   padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer__link {
   display: flex;

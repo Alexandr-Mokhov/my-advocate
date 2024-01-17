@@ -5,7 +5,7 @@
   background: linear-gradient(rgba(4, 182, 245, 0.16), rgba(4, 182, 245, 0.08));
   border: 2px solid #04B6F529;
   box-sizing: border-box;
-  margin-bottom: 32px;
+  margin: 0 16px 30px;
 
   &__logo {
     width: 295px;
@@ -27,7 +27,7 @@
   }
 
   &__button {
-    @include font-text(12px, 15px, 2px, 600);
+    @include font-text(12px, 15px, 2.7px, 600);
     height: 40px;
     color: $text-white;
     background-color: $button-color;

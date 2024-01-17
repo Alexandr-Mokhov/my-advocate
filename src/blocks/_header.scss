@@ -54,4 +54,8 @@
     height: 48px;
     background-image: url(./images/icon-notifications.svg);
   }
+
+  @media screen and (max-width: 315px) {
+    width: calc(100vw - 47px);
+  }
 }

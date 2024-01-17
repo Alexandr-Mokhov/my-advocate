@@ -23,8 +23,8 @@
   }
 
   &__container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
@@ -64,5 +64,15 @@
   &__article-date {
     @include font-text(10px, 12px, .2px);
     margin: 0;
+  }
+
+  @media screen and (max-width: 315px) {
+    width: calc(100vw - 47px);
+  }
+
+  @media screen and (min-width: 600px) {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 }

@@ -1,7 +1,7 @@
 @import "../scss/vars";
 
 .footer {
-  width: 360px;
+  width: 100%;
   height: 56px;
   position: fixed;
   bottom: 0;
@@ -76,5 +76,9 @@
     align-items: center;
     justify-content: center;
     color: $text-white;
+  }
+
+  @media screen and (min-width: 770px) {
+    width: 753px;
   }
 }

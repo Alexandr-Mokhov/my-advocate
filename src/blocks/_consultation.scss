@@ -1,5 +1,4 @@
 .consultation {
-  min-height: 376px;
   border-radius: 16px;
   border: 2px;
   background: linear-gradient(rgba(4, 182, 245, 0.16), rgba(4, 182, 245, 0.08));
@@ -13,6 +12,9 @@
     border-radius: 8px;
     background-image: url(./images/consultation-logo.svg);
     margin: 24px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__title {
@@ -37,5 +39,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 315px) {
+    width: calc(100vw - 47px);
+
+    &__logo {
+      width: calc(100% - 32px);
+      height: 50vw;
+      margin: 16px;
+      background-position: center;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    &__logo {
+      width: calc(100% - 32px);
+      height: 44.5vw;
+      margin: 24px 16px;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__logo {
+      width: 50%;
+      margin: 24px 20px;
+    }
   }
 }

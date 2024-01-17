@@ -54,4 +54,8 @@
     color: $text-white;
     margin: 0 0 6px 0;
   }
+
+  @media screen and (max-width: 315px) {
+    width: calc(100vw - 47px);
+  }
 }

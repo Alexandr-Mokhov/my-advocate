@@ -13,11 +13,12 @@
   <div class="page">
     <header class="header">
       <div class="header__logo"></div>
-      <div class="header__search">
+      <div class="header__search js-search">
         <form class="header__form" novalidate>
           <button class="header__search-icon" type="submit"></button>
-          <input class="header__search-input" type="text" placeholder="Поиск" minlength="3" required>
+          <input class="header__search-input js-search-input" type="text" placeholder="Поиск" minlength="3" required>
         </form>
+        <ul class="header__search-list js-search-list"></ul>
       </div>
       <a class="header__notifications" href="#"></a>
     </header>
@@ -164,6 +165,7 @@
       </nav>
     </footer>
   </div>
+  <script src="./src/index.js"></script>
 </body>
 
 </html>

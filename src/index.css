@@ -47,6 +47,7 @@ ul {
   display: flex;
   height: 36px;
   width: auto;
+  position: relative;
 }
 .header__search-icon {
   width: 24px;
@@ -68,16 +69,60 @@ ul {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  font-weight: 500;
+  font-weight: 400;
   width: 100%;
+  padding-left: 5px;
 }
 .header__search-input::-moz-placeholder {
   color: #222;
   opacity: 0.34;
+  padding-left: 5px;
 }
 .header__search-input::placeholder {
   color: #222;
   opacity: 0.34;
+  padding-left: 5px;
+}
+.header__search-input:focus {
+  outline: 2px solid #AAA;
+  border-radius: 10px;
+}
+.header__search-list {
+  position: absolute;
+  top: 40px;
+  left: -45px;
+  border: 1px solid #e4edfb;
+  padding: 10px;
+  background-color: #FFF;
+  box-shadow: 0 7px 29px 0 hsla(240, 5%, 41%, 0.2);
+  border-radius: 5px;
+  width: calc(100vw - 72px);
+  max-width: 695px;
+  min-width: 200px;
+  max-height: 400px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  overflow: auto;
+  z-index: 5;
+}
+.header__search-list_visible {
+  visibility: visible;
+}
+.header__search-list-item {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  font-weight: 350;
+  margin: 0;
+  padding: 4px 6px;
+  border: 1px solid #EEE;
+}
+.header__search-list-item:hover {
+  background-color: #EEE;
+  border: 1px solid #BBB;
+  cursor: pointer;
 }
 .header__notifications {
   width: 48px;

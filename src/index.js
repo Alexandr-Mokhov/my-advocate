@@ -1,3 +1,4 @@
+import './index.css'
 const searchContainer = document.querySelector('.js-search');
 const searchInput = searchContainer.querySelector('.js-search-input');
 const searchList = searchContainer.querySelector('.js-search-list');

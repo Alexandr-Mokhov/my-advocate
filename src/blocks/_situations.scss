@@ -22,7 +22,7 @@
     justify-content: end;
     padding: 0 6px;
     box-sizing: border-box;
-    background: linear-gradient(127.57deg, rgba(43, 58, 76, 0.83) 12.5%, rgba(4, 182, 245, 0.63) 106.03%);
+    background: linear-gradient(127.57deg, #2B3A4C 12.5%, #04B6F5 106.03%);
     position: relative;
 
     &:nth-child(1) {
@@ -88,13 +88,11 @@
   45% {
     transform: translateX(-115%);
     opacity: 0;
-    visibility: hidden;
   }
 
   45%,
   50% {
     transform: translateX(330%);
-    visibility: visible;
   }
 
   50%,
@@ -130,13 +128,11 @@
   70% {
     transform: translateX(-220%);
     opacity: 0;
-    visibility: hidden;
   }
 
   70%,
   75% {
     transform: translateX(220%);
-    visibility: visible;
   }
 
   75%,
@@ -172,13 +168,11 @@
   95% {
     transform: translateX(-330%);
     opacity: 0;
-    visibility: hidden;
   }
 
   95%,
   100% {
     transform: translateX(110%);
-    visibility: visible;
   }
 
   100% {
@@ -192,14 +186,12 @@
   20% {
     transform: translateX(0%);
     opacity: 0;
-    visibility: hidden;
   }
 
   25%,
   45% {
     transform: translateX(-110%);
     opacity: 1;
-    visibility: visible;
   }
 
   50%,
@@ -212,12 +204,10 @@
   95% {
     transform: translateX(-330%);
     opacity: 1;
-    visibility: visible;
   }
 
   100% {
     transform: translateX(-440%);
     opacity: 0;
-    visibility: hidden;
   }
 }
